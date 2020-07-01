@@ -1,0 +1,8 @@
+include LICENSE
+include DEMO_README.txt 
+include README.txt 
+include assist.py
+include config_common.py
+include config.py
+include dfa_logrotate
+include rootCA2.crt

@@ -1,0 +1,8 @@
+/var/log/directflow_assist.log {
+    size=1M
+    rotate 2
+    copytruncate
+    compress
+    notifempty
+    missingok
+}

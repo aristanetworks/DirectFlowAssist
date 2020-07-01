@@ -1,0 +1,319 @@
+
+
+
+#
+bizdev-tor1#sh directflow detail | json
+{
+    "details": {
+        "status": {
+            "BYPASS_FW_web-brows_TCP_172-22-28-42:80_10-95-1-144:65298_May29_14:10:11_RSP": "Flow programmed", 
+            "STATIC_THRU_FIREWALL__in:Po40_Po60__out:Po20": "Flow programmed", 
+            "BYPASS_FW_web-brows_TCP_10-95-1-144:65298_172-22-28-42:80_May29_14:10:11_INI": "Flow programmed", 
+            "STATIC_THRU_FIREWALL__in:Po30_Po50__out:Po10": "Flow programmed", 
+            "DROP_Session_L_HOPOPT_10-95-1-144_172-22-28-43_May29_14:08:51": "Flow programmed", 
+            "STATIC_THRU_FIREWALL__in:Po10__out:Po30_Po50": "Flow programmed", 
+            "STATIC_THRU_FIREWALL__in:Po20__out:Po40_Po60": "Flow programmed"
+        }, 
+        "numFlowsProgrammed": 7
+    }, 
+    "flows": [
+        {
+            "priority": 50, 
+            "matchPackets": 0, 
+            "matchBytes": 0, 
+            "bridgeMacAddr": "00:1c:73:74:81:9e", 
+            "name": "DROP_Session_L_HOPOPT_10-95-1-144_172-22-28-43_May29_14:08:51", 
+            "action": {
+                "outputNormal": false, 
+                "outputController": false, 
+                "outputDrop": true, 
+                "loopback": false, 
+                "outInterfaces": [], 
+                "outputFlood": false, 
+                "outputLocal": false, 
+                "egrMirrorInterfaces": [], 
+                "outputAll": false, 
+                "ingrMirrorInterfaces": []
+            }, 
+            "hardTimeout": 1800, 
+            "idleTimeout": 300, 
+            "persistent": false, 
+            "match": {
+                "inInterfaces": [], 
+                "unknownL3V4MulticastAddress": false, 
+                "tcpRst": false, 
+                "ethTypeMask": 65535, 
+                "tcpSyn": false, 
+                "ipSrc": {
+                    "mask": "255.255.255.255", 
+                    "ip": "10.95.1.144"
+                }, 
+                "tcpPsh": false, 
+                "tcpUrg": false, 
+                "tcpFin": false, 
+                "unknownL2V4MulticastAddress": false, 
+                "ethType": 2048, 
+                "tcpAck": false, 
+                "ipDst": {
+                    "mask": "255.255.255.255", 
+                    "ip": "172.22.28.43"
+                }
+            }
+        }, 
+        {
+            "priority": 40, 
+            "matchPackets": 0, 
+            "matchBytes": 0, 
+            "bridgeMacAddr": "00:1c:73:74:81:9e", 
+            "name": "BYPASS_FW_web-brows_TCP_172-22-28-42:80_10-95-1-144:65298_May29_14:10:11_RSP", 
+            "action": {
+                "outputNormal": false, 
+                "outputLocal": false, 
+                "loopback": false, 
+                "outInterfaces": [
+                    "Port-Channel10"
+                ], 
+                "vlanPCP": 2, 
+                "egrMirrorInterfaces": [], 
+                "outputAll": false, 
+                "outputController": false, 
+                "outputDrop": false, 
+                "outputFlood": false, 
+                "ingrMirrorInterfaces": []
+            }, 
+            "hardTimeout": 600, 
+            "idleTimeout": 300, 
+            "persistent": false, 
+            "match": {
+                "inInterfaces": [
+                    "Port-Channel20"
+                ], 
+                "unknownL3V4MulticastAddress": false, 
+                "ethType": 2048, 
+                "ethTypeMask": 65535, 
+                "tcpSyn": false, 
+                "ipSrc": {
+                    "mask": "255.255.255.255", 
+                    "ip": "172.22.28.42"
+                }, 
+                "tcpPsh": false, 
+                "tcpUrg": false, 
+                "ipPortDst": 65298, 
+                "tcpFin": false, 
+                "tcpRst": false, 
+                "ipProto": 6, 
+                "ipPortSrc": 80, 
+                "unknownL2V4MulticastAddress": false, 
+                "tcpAck": false, 
+                "ipDst": {
+                    "mask": "255.255.255.255", 
+                    "ip": "10.95.1.144"
+                }
+            }
+        }, 
+        {
+            "priority": 40, 
+            "matchPackets": 0, 
+            "matchBytes": 0, 
+            "bridgeMacAddr": "00:1c:73:74:81:9e", 
+            "name": "BYPASS_FW_web-brows_TCP_10-95-1-144:65298_172-22-28-42:80_May29_14:10:11_INI", 
+            "action": {
+                "outputNormal": false, 
+                "outputLocal": false, 
+                "loopback": false, 
+                "outInterfaces": [
+                    "Port-Channel20"
+                ], 
+                "vlanPCP": 2, 
+                "egrMirrorInterfaces": [], 
+                "outputAll": false, 
+                "outputController": false, 
+                "outputDrop": false, 
+                "outputFlood": false, 
+                "ingrMirrorInterfaces": []
+            }, 
+            "hardTimeout": 600, 
+            "idleTimeout": 300, 
+            "persistent": false, 
+            "match": {
+                "inInterfaces": [
+                    "Port-Channel10"
+                ], 
+                "unknownL3V4MulticastAddress": false, 
+                "ethType": 2048, 
+                "ethTypeMask": 65535, 
+                "tcpSyn": false, 
+                "ipSrc": {
+                    "mask": "255.255.255.255", 
+                    "ip": "10.95.1.144"
+                }, 
+                "tcpPsh": false, 
+                "tcpUrg": false, 
+                "ipPortDst": 80, 
+                "tcpFin": false, 
+                "tcpRst": false, 
+                "ipProto": 6, 
+                "ipPortSrc": 65298, 
+                "unknownL2V4MulticastAddress": false, 
+                "tcpAck": false, 
+                "ipDst": {
+                    "mask": "255.255.255.255", 
+                    "ip": "172.22.28.42"
+                }
+            }
+        }, 
+        {
+            "priority": 10, 
+            "matchPackets": 5817848, 
+            "matchBytes": 960767986, 
+            "bridgeMacAddr": "00:1c:73:74:81:9e", 
+            "name": "STATIC_THRU_FIREWALL__in:Po40_Po60__out:Po20", 
+            "action": {
+                "outputNormal": false, 
+                "outputController": false, 
+                "outputDrop": false, 
+                "loopback": false, 
+                "outInterfaces": [
+                    "Port-Channel20"
+                ], 
+                "outputFlood": false, 
+                "outputLocal": false, 
+                "egrMirrorInterfaces": [], 
+                "outputAll": false, 
+                "ingrMirrorInterfaces": []
+            }, 
+            "hardTimeout": 0, 
+            "idleTimeout": 0, 
+            "persistent": true, 
+            "match": {
+                "inInterfaces": [
+                    "Port-Channel40", 
+                    "Port-Channel60"
+                ], 
+                "unknownL3V4MulticastAddress": false, 
+                "tcpFin": false, 
+                "tcpRst": false, 
+                "tcpSyn": false, 
+                "tcpPsh": false, 
+                "tcpUrg": false, 
+                "tcpAck": false, 
+                "unknownL2V4MulticastAddress": false
+            }
+        }, 
+        {
+            "priority": 10, 
+            "matchPackets": 819305, 
+            "matchBytes": 61547514, 
+            "bridgeMacAddr": "00:1c:73:74:81:9e", 
+            "name": "STATIC_THRU_FIREWALL__in:Po30_Po50__out:Po10", 
+            "action": {
+                "outputNormal": false, 
+                "outputController": false, 
+                "outputDrop": false, 
+                "loopback": false, 
+                "outInterfaces": [
+                    "Port-Channel10"
+                ], 
+                "outputFlood": false, 
+                "outputLocal": false, 
+                "egrMirrorInterfaces": [], 
+                "outputAll": false, 
+                "ingrMirrorInterfaces": []
+            }, 
+            "hardTimeout": 0, 
+            "idleTimeout": 0, 
+            "persistent": true, 
+            "match": {
+                "inInterfaces": [
+                    "Port-Channel30", 
+                    "Port-Channel50"
+                ], 
+                "unknownL3V4MulticastAddress": false, 
+                "tcpFin": false, 
+                "tcpRst": false, 
+                "tcpSyn": false, 
+                "tcpPsh": false, 
+                "tcpUrg": false, 
+                "tcpAck": false, 
+                "unknownL2V4MulticastAddress": false
+            }
+        }, 
+        {
+            "priority": 10, 
+            "matchPackets": 142398, 
+            "matchBytes": 14546213, 
+            "bridgeMacAddr": "00:1c:73:74:81:9e", 
+            "name": "STATIC_THRU_FIREWALL__in:Po20__out:Po40_Po60", 
+            "action": {
+                "outputNormal": false, 
+                "outputController": false, 
+                "outputDrop": false, 
+                "loopback": false, 
+                "outInterfaces": [
+                    "Port-Channel40", 
+                    "Port-Channel60"
+                ], 
+                "outputFlood": false, 
+                "outputLocal": false, 
+                "egrMirrorInterfaces": [], 
+                "outputAll": false, 
+                "ingrMirrorInterfaces": []
+            }, 
+            "hardTimeout": 0, 
+            "idleTimeout": 0, 
+            "persistent": true, 
+            "match": {
+                "inInterfaces": [
+                    "Port-Channel20"
+                ], 
+                "unknownL3V4MulticastAddress": false, 
+                "tcpFin": false, 
+                "tcpRst": false, 
+                "tcpSyn": false, 
+                "tcpPsh": false, 
+                "tcpUrg": false, 
+                "tcpAck": false, 
+                "unknownL2V4MulticastAddress": false
+            }
+        }, 
+        {
+            "priority": 10, 
+            "matchPackets": 5163148, 
+            "matchBytes": 1109796258, 
+            "bridgeMacAddr": "00:1c:73:74:81:9e", 
+            "name": "STATIC_THRU_FIREWALL__in:Po10__out:Po30_Po50", 
+            "action": {
+                "outputNormal": false, 
+                "outputController": false, 
+                "outputDrop": false, 
+                "loopback": false, 
+                "outInterfaces": [
+                    "Port-Channel30", 
+                    "Port-Channel50"
+                ], 
+                "outputFlood": false, 
+                "outputLocal": false, 
+                "egrMirrorInterfaces": [], 
+                "outputAll": false, 
+                "ingrMirrorInterfaces": []
+            }, 
+            "hardTimeout": 0, 
+            "idleTimeout": 0, 
+            "persistent": true, 
+            "match": {
+                "inInterfaces": [
+                    "Port-Channel10"
+                ], 
+                "unknownL3V4MulticastAddress": false, 
+                "tcpFin": false, 
+                "tcpRst": false, 
+                "tcpSyn": false, 
+                "tcpPsh": false, 
+                "tcpUrg": false, 
+                "tcpAck": false, 
+                "unknownL2V4MulticastAddress": false
+            }
+        }
+    ]
+}
+

@@ -1,0 +1,6 @@
+
+Dec 31 23:59:59 000 vArmour va_syslog: [Chassis(vArmour):Device(4):VA_APP_ANET_RTLOG] sip=10.95.1.144 sport=0 dip=172.22.28.33 dport=0 proto=1 c2s-pkts=1 s2c-pkts=1 sess-close-reason=policy-deny c2s-bytes=1 s2c-bytes=1 sintf=xe-4/0/4 dintf=xe-4/0/5
+Dec 31 23:59:59 000 vArmour va_syslog: [Chassis(vArmour):Device(4):VA_APP_ANET_RTLOG] sip=10.95.1.144 sport=33333 dip=172.22.28.33 dport=22 proto=6 c2s-pkts=0 s2c-pkts=0 sess-close-reason=policy-permit c2s-bytes=0 s2c-bytes=0 sintf=xe-4/0/4 dintf=xe-4/0/5
+
+#Dec 31 23:59:59 000 vArmour va_syslog: [Chassis(vArmour):Device(4):VA_APP_ANET_RTLOG] sip=172.22.225.127 sport=0 dip=172.22.28.33 dport=0 proto=1 c2s-pkts=1 s2c-pkts=1 sess-close-reason=policy-permit c2s-bytes=1 s2c-bytes=1 sintf=xe-4/0/4 dintf=xe-4/0/5
+#Dec 31 23:59:59 000 vArmour va_syslog: [Chassis(vArmour):Device(4):VA_APP_ANET_RTLOG] sip=172.22.225.127 sport=33333 dip=172.22.28.33 dport=22 proto=6 c2s-pkts=0 s2c-pkts=0 sess-close-reason=policy-deny c2s-bytes=0 s2c-bytes=0 sintf=xe-4/0/5 dintf=xe-4/0/4

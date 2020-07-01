@@ -1,0 +1,10 @@
+include LICENSE
+include README.txt 
+include config_common.py
+include config.py
+include dfa_logrotate
+include rootCA2.crt
+include dfa_tor1.crt
+include dfa_tor1.key
+include dfa_tor2.crt
+include dfa_tor2.key
