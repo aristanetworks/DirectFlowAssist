@@ -10,25 +10,6 @@ security platforms.
   
   
 ### Latest Version: 1.0.0
-
-### For use with Palo Alto Networks firewalls
-[RPM](https://github.com/arista-eosext/directflow-assist/blob/master/rpm/)  
-[Docs](https://github.com/arista-eosext/directflow-assist/blob/master/persist_pan/README.txt)  
-Release Status: GA  
-Support: [Arista TAC](http://www.arista.com/en/support/customer-support), <mailto:support@arista.com>  
-  
-#### For use with Fortinet's Fortigate firewalls
-[RPM](https://github.com/arista-eosext/directflow-assist/blob/master/rpm/)  
-[Docs](https://github.com/arista-eosext/directflow-assist/blob/master/persist_fnet/README.txt)  
-Release Status: EFT  
-Support: Best effort basis, <mailto:dfa-dev@arista.com>  
-  
-#### For use with Check Point Software firewalls
-[RPM](https://github.com/arista-eosext/directflow-assist/blob/master/rpm/)  
-[Docs](https://github.com/arista-eosext/directflow-assist/blob/master/persist_chkp/README.txt)  
-Release Status: EFT  
-Support: Best effort basis, <mailto:dfa-dev@arista.com]>  
-  
   
 ### License
-BSD-3, See LICENSE file
+Apache 2.0
